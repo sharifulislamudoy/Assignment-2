@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Visibility */
+.visibility{
+    display: none;
+}
 /* Primary Font */
 .p-font{
     font-family: "Quicksand", serif;
@@ -11,4 +16,87 @@
 /* Description Font */
 .d-font{
     font-family: "Raleway", serif;
+}
+
+/* Designing Nav-bar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.nav-logo-title{
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-title > img{
+    width: 80%;
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav-bar-home{
+    color: rgb(254, 163, 1);
+}
+
+#nav-bar-about{
+    color: rgb(1, 172, 253);
+}
+#nav-bar-facilities{
+    color: rgb(5, 212, 223);
+}
+#nav-bar-admission{
+    color: rgb(93, 88, 239);
+}
+.nav-bar{
+    padding: 10px;
+}
+
+.nav-bar > a{
+    font-size: 0.8rem;
+}
+nav > button{
+    padding: 7px 30px;
+    font-size: 0.8rem;
+    background-color: #FEA301;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.button-top:hover{
+    background-color: #d18504;
+}
+
+hr{
+    color: #FEA301;
+    display: none;
+}
+
+.hamburger-icon{
+    display: none;
+}
+
+
+@media screen and (max-width:576px){
+    .nav-name , .nav-container , .button-top{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+        margin: 10px 20px;
+    }
+    hr , .hamburger-icon{
+        display: block;
+    }
 }
