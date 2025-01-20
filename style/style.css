@@ -95,11 +95,12 @@ hr{
         justify-content: space-between;
         margin: 10px 20px;
     }
-    hr , .hamburger-icon{
-        display: block;
-    }
-
     hr{
+        display: block;
         color: #FEA301;
+    }
+    
+    .hamburger-icon{
+        display: block;
     }
 }
