@@ -79,7 +79,6 @@ nav > button{
 }
 
 hr{
-    color: #FEA301;
     display: none;
 }
 
@@ -98,5 +97,9 @@ hr{
     }
     hr , .hamburger-icon{
         display: block;
+    }
+
+    hr{
+        color: #FEA301;
     }
 }
