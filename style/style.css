@@ -135,20 +135,24 @@ h1{
 
 main{
     background-image: url("../assets/bg.png");
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
 
-/* Section 1 */
+/* Section */
 
-.section-1{
+.section{
     max-width: 80%;
     margin: auto;
 }
 
-.section-1-title{
+.section-title{
     text-align: center;
     margin-top: 2em;
     font-size: 1.8rem;
+    font-weight: 700;
 }
+
+/* Section-1-Container */
 
 .section-1-container{
     display: flex;
@@ -175,8 +179,8 @@ main{
     object-fit: cover;
 }
 
-.card > h3{
-    margin: 20px auto;
+.section-1-h{
+    margin: 2em;
 }
 
 .card-p{
@@ -236,7 +240,15 @@ main{
     font-size: larger;
     color: white;
     font-weight: bolder;
+    cursor: pointer;
 }
+
+#section-1-btn:hover{
+    background-color: #d18504;
+}
+
+/* Section 2 */
+
 
 /* Media Query */
 
@@ -268,7 +280,7 @@ main{
     }
 
     h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .hero-section-heading{
         text-align: center;
@@ -284,7 +296,7 @@ main{
     .section-1-container{
         flex-direction: column;
     }
-    .section-1-title{
+    .section-title{
         margin-bottom: none;
         font-size: 1rem;
         margin-top: 4em;
